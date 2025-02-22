@@ -64,10 +64,10 @@ const SingleProduct = () => {
 
                 </div>
                 <div>
-                    <p>Name : {singleProduct.name}</p>
-                    <p>Price : {singleProduct.price}</p>
-                    <p>Description : {singleProduct.description}</p>
-                    <p>CreatedAt: {dayjs(singleProduct.createdAt).format('DD/MM/YYYY')}</p>
+                    <p>   <b>Name:</b> {singleProduct.name}</p>
+                    <p>   <b>Price:</b>  {singleProduct.price}</p>
+                    <p>  <b>Description:</b> {singleProduct.description}</p>
+                    <p>   <b>CreatedAt:</b> {dayjs(singleProduct.createdAt).format('DD/MM/YYYY')}</p>
                 </div>
 
             </div>

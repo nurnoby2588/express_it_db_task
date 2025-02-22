@@ -13,7 +13,7 @@ function classNames(...classes) {
 
 export default function Example() {
   return (
-    <Disclosure as="nav" className="bg-gray-800 mb-3">
+    <Disclosure as="nav" className="bg-cyan-800 mb-3">
       <div className="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
         <div className="relative flex h-16 items-center justify-between">
           <div className="absolute inset-y-0 left-0 flex items-center sm:hidden">
@@ -35,8 +35,8 @@ export default function Example() {
                     href={item.href}
                     aria-current={item.current ? 'page' : undefined}
                     className={classNames(
-                      item.current ? 'bg-gray-900 text-white' : 'text-gray-300 hover:bg-gray-700 hover:text-white',
-                      'rounded-md px-3 py-2 text-sm font-medium',
+                      item.current ? 'bg-gray-900 text-white' : 'text-white hover:bg-gray-700 hover:text-white',
+                      'rounded-md px-3 py-2  font-medium text-xl',
                     )}
                   >
                     {item.name}
@@ -58,8 +58,8 @@ export default function Example() {
               href={item.href}
               aria-current={item.current ? 'page' : undefined}
               className={classNames(
-                item.current ? 'bg-gray-900 text-white' : 'text-gray-300 hover:bg-gray-700 hover:text-white',
-                'block rounded-md px-3 py-2 text-base font-medium',
+                item.current ? 'bg-gray-900 text-white' : 'text-white hover:bg-gray-700 hover:text-white',
+                'block rounded-md px-3 py-2 text-base font-medium ',
               )}
             >
               {item.name}

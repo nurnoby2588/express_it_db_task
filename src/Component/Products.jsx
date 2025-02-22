@@ -35,21 +35,21 @@ const Products=({})=>{
 
 
     return(
-        <div>
+        <div className="lg:container mx-auto">
             <div className="grid grid-cols-1 xl:grid-cols-4 lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-2 gap-3 p-5 mx-auto">
                 {products?.map((data, index) => (
                     <div
                         onClick={() => handleSingleItms(data._id)}
                         key={index}
-                        className="cursor-pointer gap-4 max-w-sm bg-white border border-gray-200 rounded-lg shadow-sm dark:bg-gray-800 dark:border-gray-700"
+                        className=" h-7/12 cursor-pointer w-10/12 max-w-sm bg-white border border-gray-200 rounded-lg shadow-sm dark:bg-gray-800 dark:border-gray-700"
                     >
-                        <img className="h-96 w-full" src={data?.images[0].optimizeUrl} alt="" />
+                        <img className="h-9/12 w-full   " src={data?.images[0].optimizeUrl} alt="" />
                         <div className="p-5">
-                            <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
-                                Name: {data.name}
-                            </h5>
-                            <p className="mb-3 font-normal text-gray-700 dark:text-gray-400">
-                                Price: {data.price}
+                            <p className="mb-2 text-xl  tracking-tight text-gray-900 dark:text-white">
+                               <b>Name:</b>   {data.name}
+                            </p>
+                            <p className="mb-3   text-gray-700 dark:text-gray-400">
+                            <b>Price:</b> {data.price}
                             </p>
                         </div>
                     </div>
