@@ -4,6 +4,8 @@ import viteLogo from '/vite.svg'
 import './App.css'
 import Products from './Component/Products'
 import CreateStore from './Component/CreateStore'
+import Navbar from './Component/Navbar'
+import { Route, Routes } from 'react-router'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -11,8 +13,14 @@ function App() {
   return (
     <>
       <div>
+      <Navbar></Navbar>
+      <Routes>
+        <Route index element={<CreateStore />} />
+        <Route path='/products'  element={<Products />} />
+        {/* <Route path="/product/:id" element={<ShowSingleProduct />} /> */}
+      </Routes>
         {/* <Products></Products> */}
-        <CreateStore></CreateStore>
+        {/* <CreateStore></CreateStore> */}
       </div>
     </>
   )
