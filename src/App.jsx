@@ -6,6 +6,7 @@ import Products from './Component/Products'
 import CreateStore from './Component/CreateStore'
 import Navbar from './Component/Navbar'
 import { Route, Routes } from 'react-router'
+import SingleProduct from './Component/SingleProduct'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -17,7 +18,7 @@ function App() {
       <Routes>
         <Route index element={<CreateStore />} />
         <Route path='/products'  element={<Products />} />
-        {/* <Route path="/product/:id" element={<ShowSingleProduct />} /> */}
+        <Route path="/product/:id" element={<SingleProduct />} />
       </Routes>
         {/* <Products></Products> */}
         {/* <CreateStore></CreateStore> */}
